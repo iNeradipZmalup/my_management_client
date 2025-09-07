@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_management_client/common/app_color.dart';
+import 'package:my_management_client/core/session.dart';
+import 'package:my_management_client/presentation/pages/dashboard_page.dart';
+import 'package:my_management_client/presentation/pages/login_page.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
   await dotenv.load(fileName: ".env");
 
   runApp(const MainApp());
@@ -30,7 +35,24 @@ class MainApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
         shadowColor: AppColor.primary.withValues(alpha: 0.3),
       ),
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+
+      home: FutureBuilder(
+        future: Session.getUser(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Scaffold(
+              body: Center(child: CircularProgressIndicator()),
+            );
+          }
+          if (snapshot.data == null) return const LoginPage();
+          return const DashboardPage();
+        },
+      ),
+
+      routes: {
+        LoginPage.routeName: (context) => const LoginPage(),
+        DashboardPage.routeName: (context) => const DashboardPage(),
+      },
     );
   }
 }
