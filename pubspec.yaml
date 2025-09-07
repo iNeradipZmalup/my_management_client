@@ -1,0 +1,36 @@
+name: my_management_client
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  fluttertoast: ^8.2.12
+  d_session: ^0.0.3
+  fd_log: ^0.0.8
+  http: ^1.5.0
+  intl: ^0.20.2
+  get: ^4.7.2
+  gap: ^3.0.1
+  google_fonts: ^4.0.5
+  d_info: ^0.2.0
+  d_chart: ^3.0.0
+  calendar_view: ^1.4.0
+  google_generative_ai: ^0.4.7
+  flutter_markdown: ^0.7.7+1
+  image_picker: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icons/
+    - assets/images/
