@@ -52,7 +52,6 @@ class _CustomButton extends StatelessWidget {
         backgroundColor: WidgetStatePropertyAll(color),
         foregroundColor: WidgetStatePropertyAll(titleColor),
       ),
-
       child: Text(
         title,
         style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),

@@ -5,6 +5,7 @@ import 'package:my_management_client/common/app_color.dart';
 import 'package:my_management_client/core/session.dart';
 import 'package:my_management_client/presentation/pages/dashboard_page.dart';
 import 'package:my_management_client/presentation/pages/login_page.dart';
+import 'package:my_management_client/presentation/pages/register_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,7 +36,6 @@ class MainApp extends StatelessWidget {
         textTheme: GoogleFonts.interTextTheme(),
         shadowColor: AppColor.primary.withValues(alpha: 0.3),
       ),
-
       home: FutureBuilder(
         future: Session.getUser(),
         builder: (context, snapshot) {
@@ -44,14 +44,16 @@ class MainApp extends StatelessWidget {
               body: Center(child: CircularProgressIndicator()),
             );
           }
+
           if (snapshot.data == null) return const LoginPage();
+
           return const DashboardPage();
         },
       ),
-
       routes: {
         LoginPage.routeName: (context) => const LoginPage(),
         DashboardPage.routeName: (context) => const DashboardPage(),
+        RegisterPage.routeName: (context) => const RegisterPage(),
       },
     );
   }
