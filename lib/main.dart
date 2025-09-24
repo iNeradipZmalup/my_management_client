@@ -6,6 +6,7 @@ import 'package:my_management_client/core/session.dart';
 import 'package:my_management_client/presentation/pages/account_page.dart';
 import 'package:my_management_client/presentation/pages/dashboard_page.dart';
 import 'package:my_management_client/presentation/pages/login_page.dart';
+import 'package:my_management_client/presentation/pages/mood/choose_mood_page.dart';
 import 'package:my_management_client/presentation/pages/register_page.dart';
 
 Future<void> main() async {
@@ -56,6 +57,7 @@ class MainApp extends StatelessWidget {
         DashboardPage.routeName: (context) => const DashboardPage(),
         RegisterPage.routeName: (context) => const RegisterPage(),
         AccountPage.routeName: (context) => const AccountPage(),
+        ChooseMoodPage.routeName: (context) => const ChooseMoodPage(),
       },
     );
   }
