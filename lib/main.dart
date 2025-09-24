@@ -3,6 +3,7 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:my_management_client/common/app_color.dart';
 import 'package:my_management_client/core/session.dart';
+import 'package:my_management_client/presentation/pages/account_page.dart';
 import 'package:my_management_client/presentation/pages/dashboard_page.dart';
 import 'package:my_management_client/presentation/pages/login_page.dart';
 import 'package:my_management_client/presentation/pages/register_page.dart';
@@ -54,6 +55,7 @@ class MainApp extends StatelessWidget {
         LoginPage.routeName: (context) => const LoginPage(),
         DashboardPage.routeName: (context) => const DashboardPage(),
         RegisterPage.routeName: (context) => const RegisterPage(),
+        AccountPage.routeName: (context) => const AccountPage(),
       },
     );
   }

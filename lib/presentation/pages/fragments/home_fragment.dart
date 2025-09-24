@@ -10,6 +10,7 @@ import 'package:my_management_client/data/models/mood_model.dart';
 import 'package:my_management_client/data/models/user_model.dart';
 import 'package:my_management_client/presentation/controllers/home/agenda_today_controller.dart';
 import 'package:my_management_client/presentation/controllers/home/mood_today_controller.dart';
+import 'package:my_management_client/presentation/pages/account_page.dart';
 import 'package:my_management_client/presentation/widgets/response_failed.dart';
 
 class HomeFragment extends StatefulWidget {
@@ -35,7 +36,9 @@ class _HomeFragmentState extends State<HomeFragment> {
 
   void gotoChatAI() {}
 
-  void gotoAccount() {}
+  void gotoAccount() {
+    Navigator.pushNamed(context, AccountPage.routeName);
+  }
 
   void gotoChooseMood() {}
 
