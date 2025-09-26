@@ -57,22 +57,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
-  community_charts_common2:
+  community_charts_common:
     dependency: transitive
     description:
-      name: community_charts_common2
-      sha256: "7a6bb82637395fbc0f48ad9121cf7861830033b5390f81a783e1e452c4d6b609"
+      name: community_charts_common
+      sha256: d997ade57f15490346de46efbe23805d378a672aafbf5e47e19517964b671009
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.7"
-  community_charts_flutter2:
+    version: "1.0.4"
+  community_charts_flutter:
     dependency: transitive
     description:
-      name: community_charts_flutter2
-      sha256: "46de88a0fa5c2873a7442e89a5cd51fbde9c25e3f66f42192c1a3a3cc02f829f"
+      name: community_charts_flutter
+      sha256: "4614846b99782ab79b613687704865e5468ecada3f0ad1afe1cdc3ff5b727f72"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.7"
+    version: "1.0.4"
   cross_file:
     dependency: transitive
     description:
@@ -93,10 +93,10 @@ packages:
     dependency: "direct main"
     description:
       name: d_chart
-      sha256: cc86911bbd8bb6fb47b5142a200889aaf25ef8d4e2c623a30a54494c7e2c4878
+      sha256: "231d2c0c65b85a5e557c8293506649bbda1fcbb7292b019cf0a64a6986ccfe1f"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "2.10.5"
   d_info:
     dependency: "direct main"
     description:
