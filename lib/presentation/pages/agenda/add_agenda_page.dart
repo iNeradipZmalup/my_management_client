@@ -273,10 +273,13 @@ class _AddAgendaPageState extends State<AddAgendaPage> {
 
             categoryController.text = value;
           },
-          icon: const ImageIcon(
-            AssetImage('assets/icons/arrow_down_circle.png'),
-            size: 24,
-            color: AppColor.primary,
+          icon: const Padding(
+            padding: EdgeInsets.only(right: 6),
+            child: ImageIcon(
+              AssetImage('assets/icons/arrow_down_circle.png'),
+              size: 24,
+              color: AppColor.primary,
+            ),
           ),
           decoration: InputDecoration(
             fillColor: Colors.white,

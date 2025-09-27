@@ -79,6 +79,8 @@ class _RegisterPageState extends State<RegisterPage> {
     if (state.statusRequest == StatusRequest.success) {
       Info.success(state.message);
 
+      gotoLogin();
+
       return;
     }
   }
