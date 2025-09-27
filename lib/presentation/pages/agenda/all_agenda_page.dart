@@ -10,6 +10,7 @@ import 'package:my_management_client/core/session.dart';
 import 'package:my_management_client/data/models/agenda_model.dart';
 import 'package:my_management_client/presentation/controllers/all_agenda/agenda_selected_controller.dart';
 import 'package:my_management_client/presentation/controllers/all_agenda/all_agenda_controller.dart';
+import 'package:my_management_client/presentation/pages/agenda/add_agenda_page.dart';
 import 'package:my_management_client/presentation/widgets/response_failed.dart';
 
 class AllAgendaPage extends StatefulWidget {
@@ -32,7 +33,9 @@ class _AllAgendaPageState extends State<AllAgendaPage> {
     });
   }
 
-  void gotoAddAgenda() {}
+  void gotoAddAgenda() {
+    Navigator.pushNamed(context, AddAgendaPage.routeName);
+  }
 
   void gotoDetailAgenda(int id) {}
 

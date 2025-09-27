@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_management_client/common/app_color.dart';
 import 'package:my_management_client/core/session.dart';
 import 'package:my_management_client/presentation/pages/account_page.dart';
+import 'package:my_management_client/presentation/pages/agenda/add_agenda_page.dart';
 import 'package:my_management_client/presentation/pages/agenda/all_agenda_page.dart';
 import 'package:my_management_client/presentation/pages/dashboard_page.dart';
 import 'package:my_management_client/presentation/pages/login_page.dart';
@@ -60,6 +61,7 @@ class MainApp extends StatelessWidget {
         AccountPage.routeName: (context) => const AccountPage(),
         ChooseMoodPage.routeName: (context) => const ChooseMoodPage(),
         AllAgendaPage.routeName: (context) => const AllAgendaPage(),
+        AddAgendaPage.routeName: (context) => const AddAgendaPage(),
       },
     );
   }
