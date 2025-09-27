@@ -17,37 +17,30 @@ class InputAuth extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 54,
-      child: TextFormField(
-        controller: controller,
-        obscureText: obscureText,
-        style: const TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 16,
-          color: AppColor.primary,
+    return TextFormField(
+      controller: controller,
+      obscureText: obscureText,
+      style: const TextStyle(
+        fontWeight: FontWeight.bold,
+        fontSize: 16,
+        color: AppColor.primary,
+      ),
+      decoration: InputDecoration(
+        fillColor: AppColor.primary.withValues(alpha: 0.1),
+        filled: true,
+        prefixIcon: UnconstrainedBox(
+          alignment: const Alignment(0.3, 0),
+          child: ImageIcon(AssetImage(icon), size: 24, color: AppColor.primary),
         ),
-        decoration: InputDecoration(
-          fillColor: AppColor.primary.withValues(alpha: 0.1),
-          filled: true,
-          prefixIcon: UnconstrainedBox(
-            alignment: const Alignment(0.3, 0),
-            child: ImageIcon(
-              AssetImage(icon),
-              size: 24,
-              color: AppColor.primary,
-            ),
-          ),
-          hintText: hint,
-          hintStyle: const TextStyle(
-            fontWeight: FontWeight.normal,
-            fontSize: 14,
-            color: AppColor.textBody,
-          ),
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20),
-            borderSide: BorderSide.none,
-          ),
+        hintText: hint,
+        hintStyle: const TextStyle(
+          fontWeight: FontWeight.normal,
+          fontSize: 14,
+          color: AppColor.textBody,
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20),
+          borderSide: BorderSide.none,
         ),
       ),
     );
